@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JustStreamIt</title>
+    <!-- Importer le code CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img id="logo-juststreamit" src="img/logo_justreamit.png" alt="JustStreamIt">
+            
+            <ul>
+              <li><a href="#">Accueil</a></li>
+              <li class="deroulant"><a href="#">Catégories &ensp;</a>
+                  <ul class="sous">
+                    <li><a href="#best-rated">Les Mieux Notés</a></li>
+                    <li><a href="#best-music">Musique</a></li>
+                    <li><a href="#best-fiction">Science-Fiction</a></li>
+                    <li><a href="#best-biography">Biographie</a></li>
+                  </ul>
+                </li>
+            </ul>
+          </nav>
+    </header>
+    <main>
+        <h1>Le Meilleur Film</h1>
+        <section id="best-movie">
+            <!-- le meilleur film -->
+            
+                      <div class="row__inner">
+                        <!-- Ajout du contenu HTML pour le meilleur film -->
+                      </div>
+        </section>
+
+        <section id="best-rated">
+            <h2>Films Les Mieux Notés</h2>
+            <div class="contain">
+                <div class="slider">
+                    <span onmouseover="scrollGauche('scroller-rated')" onmouseout="clearScroll()" class="handle handlePrev active">
+                      <i class="fa fa-caret-left" aria-hidden="true"></i>
+                    </span>
+                    <div id="scroller-rated" class="row">
+                      <div class="row__inner">
+                        <!-- Ajout du contenu HTML pour les meilleur film -->
+                      </div>
+                    </div>
+                    <span onmouseover="scrollDroite('scroller-rated')" onmouseout="clearScroll()"  class="handle handleNext active">
+                      <i class="fa fa-caret-right" aria-hidden="true"></i>
+                    </span>
+                  </div>
+              </div>
+        </section>
+
+        <section id="best-music">
+            <h2>Musique</h2>
+                <!-- Ajouter le contenu HTML pour les films de la catégorie musique -->
+                <div class="contain">
+                    <div class="slider">
+                        <span onmouseover="scrollGauche('scroller-music')" onmouseout="clearScroll()" class="handle handlePrev active">
+                          <i class="fa fa-caret-left" aria-hidden="true"></i>
+                        </span>
+                        <div id="scroller-music" class="row">
+                          <div class="row__inner">
+                            <!-- Ajout du contenu HTML pour les meilleur film musique -->
+                          </div>
+                        </div>
+                        <span onmouseover="scrollDroite('scroller-music')" onmouseout="clearScroll()"  class="handle handleNext active">
+                          <i class="fa fa-caret-right" aria-hidden="true"></i>
+                        </span>
+                      </div>
+                  </div>
+        </section>
+
+        <section id="best-fiction">
+            <h2>Science - Fiction</h2>
+                <!-- Ajouter le contenu HTML pour les films de la catégorie animation -->
+                <div class="contain">
+                    <div class="slider">
+                        <span onmouseover="scrollGauche('scroller-fiction')" onmouseout="clearScroll()" class="handle handlePrev active">
+                          <i class="fa fa-caret-left" aria-hidden="true"></i>
+                        </span>
+                        <div id="scroller-fiction" class="row">
+                          <div class="row__inner">
+                            <!-- Ajout du contenu HTML pour les meilleur film d'animation -->
+                          </div>
+                        </div>
+                        <span onmouseover="scrollDroite('scroller-fiction')" onmouseout="clearScroll()"  class="handle handleNext active">
+                          <i class="fa fa-caret-right" aria-hidden="true"></i>
+                        </span>
+                      </div>
+                  </div>
+        </section>
+
+        <section id="best-biography">
+            <h2>Biographie</h2>
+                <!-- Ajouter le contenu HTML pour les films de la catégorie animation -->
+                <div class="contain">
+                    <div class="slider">
+                        <span onmouseover="scrollGauche('scroller-biography')" onmouseout="clearScroll()" class="handle handlePrev active">
+                          <i class="fa fa-caret-left" aria-hidden="true"></i>
+                        </span>
+                        <div id="scroller-biography" class="row">
+                          <div class="row__inner">
+                            <!-- Ajout du contenu HTML pour les meilleur film d'animation -->
+                          </div>
+                        </div>
+                        <span onmouseover="scrollDroite('scroller-biography')" onmouseout="clearScroll()"  class="handle handleNext active">
+                          <i class="fa fa-caret-right" aria-hidden="true"></i>
+                        </span>
+                      </div>
+                  </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Ajouter le texte de pied de page -->
+        <nav>
+            <img id="logo-juststreamit" src="img/logo_justreamit.png" alt="Logo JustStreamIt" >
+              <div>
+                <a target="_blank" href="https://twitter.com/" class="lien-icone">
+                    <img src="img/twitter.png" alt="Logo Twitter" >
+                </a>
+              </div>  
+        </nav>
+    </footer>
+
+    <!-- Ajouter la fenêtre modale -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <!-- Ajouter le contenu HTML pour la fenêtre modale -->
+        </div>
+    </div>
+    <!-- Importer le code JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
