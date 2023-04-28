@@ -109,7 +109,7 @@ function showModal(movie) {
               <p>Score IMDb : <span class="imdb-score">${movie.imdb_score ? movie.imdb_score : "Non mentionné"}</span></p>
               <p>Réalisateur : <span class="director">${movie.directors ? movie.directors : "Non mentionné"}</span></p>
               <p>Acteurs : <span class="actors">${movie.actors.join(', ') ? movie.actors.join(', ') : "Non mentionné"}</span></p>
-              <p>Durée : <span class="duration">${movie.duration ? movie.duration : "Non mentionné"}</span></p>
+              <p>Durée : <span class="duration">${movie.duration ? movie.duration+" min" : "Non mentionné"}</span></p>
               <p>Pays d'origine : <span class="country">${movie.countries ? movie.countries : "Non mentionné"}</span></p>
               <p>Résultat au Box Office : <span class="box-office">${movie.worldwide_gross_income ? movie.worldwide_gross_income :"Non mentionné"}</span></p>
               <p>Résumé : <span class="summary">${movie.description ? movie.description : "Non mentionné"}</span></p>
