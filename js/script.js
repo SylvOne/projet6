@@ -102,17 +102,17 @@ function showModal(movie) {
       <div class="movie-details">
           <img src="${movie.image_url}" alt="${movie.title}">
           <div class="details">
-              <h2>${movie.title}</h2>
-              <p>Genre : <span class="genre">${movie.genres}</span></p>
-              <p>Date de sortie : <span class="release-date">${movie.date_published}</span></p>
-              <p>Rated : <span class="rated">${movie.rated}</span></p>
-              <p>Score IMDb : <span class="imdb-score">${movie.imdb_score}</span></p>
-              <p>Réalisateur : <span class="director">${movie.directors}</span></p>
-              <p>Acteurs : <span class="actors">${movie.actors.join(', ')}</span></p>
-              <p>Durée : <span class="duration">${movie.duration}</span></p>
-              <p>Pays d'origine : <span class="country">${movie.countries}</span></p>
-              <p>Résultat au Box Office : <span class="box-office">${movie.worldwide_gross_income}</span></p>
-              <p>Résumé : <span class="summary">${movie.description}</span></p>
+              <h2>${movie.title ? movie.title : "Non mentionné"}</h2>
+              <p>Genre : <span class="genre">${movie.genres ? movie.genres : "Non mentionné"}</span></p>
+              <p>Date de sortie : <span class="release-date">${movie.date_published ? movie.date_published : "Non mentionné"}</span></p>
+              <p>Rated : <span class="rated">${movie.rated === "Not rated or unkown rating" ? "Non mentionné" : movie.rated}</span></p>
+              <p>Score IMDb : <span class="imdb-score">${movie.imdb_score ? movie.imdb_score : "Non mentionné"}</span></p>
+              <p>Réalisateur : <span class="director">${movie.directors ? movie.directors : "Non mentionné"}</span></p>
+              <p>Acteurs : <span class="actors">${movie.actors.join(', ') ? movie.actors.join(', ') : "Non mentionné"}</span></p>
+              <p>Durée : <span class="duration">${movie.duration ? movie.duration : "Non mentionné"}</span></p>
+              <p>Pays d'origine : <span class="country">${movie.countries ? movie.countries : "Non mentionné"}</span></p>
+              <p>Résultat au Box Office : <span class="box-office">${movie.worldwide_gross_income ? movie.worldwide_gross_income :"Non mentionné"}</span></p>
+              <p>Résumé : <span class="summary">${movie.description ? movie.description : "Non mentionné"}</span></p>
           </div>
       </div>
   `;

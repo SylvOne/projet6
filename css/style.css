@@ -352,7 +352,6 @@ a:hover {
   
 }
 
-
 .row__inner:hover {
   -webkit-transform: translate3d(-62.5px, 0, 0);
           transform: translate3d(-62.5px, 0, 0);
@@ -390,6 +389,7 @@ a:hover {
     max-width: 800px;
     position: relative;
 }
+
 .close {
     position: absolute;
     top: 0;
@@ -399,11 +399,14 @@ a:hover {
     color: #aaa;
     cursor: pointer;
 }
+
 .close:hover, .close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
 }
+
+
 /* Styles spécifiques pour la zone "Meilleur film" */
 #best-movie {
     padding-bottom: 0px;
@@ -428,6 +431,7 @@ a:hover {
 #best-movie h2 {
     text-align: center;
 }
+
 .gui-card-best-movie {
     position: relative;
     display: inline-block;
@@ -458,22 +462,27 @@ a:hover {
 .movie-details {
     display: flex;
 }
+
 .movie-details img {
     width: 200px;
     height: 300px;
     margin-right: 2rem;
 }
+
 .details {
     flex: 1;
 }
+
 .details h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
+
 .details p {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
 }
+
 .details p span {
     font-weight: bold;
 }
