@@ -2,7 +2,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
 /* Styles généraux */
-#logo-juststreamit {
+.logo-juststreamit {
   width: 150px;
   height: 150px;
 }
@@ -20,26 +20,22 @@ header{
     padding: 20px 50px;
   }
   
-  header li {
+header li {
     display: inline-block;
     padding: 20px;
   }
   
-  header a:hover{
+header a:hover{
     text-decoration: none;
     color: #fff;
   }
   
-  header li a:hover {
+header li a:hover {
     display: block;
   }
   
-  header li:hover .submenu {
-    display: block;
-    background-color: #ecf0f1;
-  }
   
-  nav{
+nav{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -61,7 +57,6 @@ nav ul li{
 nav ul::after{
     content: "";
     display: table;
-    clear: both;
 }
 
 nav a{
@@ -106,8 +101,8 @@ nav > ul li:hover .sous{
 }  
 
 .deroulant > a::after{
-    content:" ▼";
-    font-size: 12px;
+  content:"▼";
+  font-size: 12px;
 }
 
 body {
@@ -122,6 +117,7 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 button {
     position: absolute; 
     bottom: 0; /* pour le placer en bas de l'image */
@@ -133,6 +129,7 @@ h1, h2, h3 {
     margin: 0;
     padding: 0;
 }
+
 h1 {
     font-size: 4rem;
     margin: 2rem 0;
@@ -148,45 +145,7 @@ h2 {
 section {
     padding: 2rem;
 }
-.movies {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.movie {
-    width: 30%;
-    margin-bottom: 2rem;
-    display: flex;
-}
-.movie img {
-    width: 100px;
-    height: 150px;
-    margin-right: 1rem;
-}
-.movie-info {
-    flex: 1;
-}
-.movie-info h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-}
-.movie-info button {
-    display: block;
-    
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 0.5rem;
-    margin-top: 0.5rem;
-    cursor: pointer;
-}
-.movie-info button:hover {
-    background-color: #0069d9;
-}
-.movie-info p {
-    margin-top: 0.5rem;
-}
+
 
 a:link,
 a:hover,
@@ -214,11 +173,6 @@ a:hover {
     touch-action: pan-y;
 }
 
-.slider h3{
-  position: absolute;
-  top: 22px;
-  z-index: 30;
-}
 
 .slider .handle.handlePrev {
     left: 11px;
@@ -315,7 +269,6 @@ a:hover {
   position: absolute;
   top: 50%;
   left: 50%;
-  display: #000;
 }
 
 .gui-card__details:after {
@@ -381,10 +334,14 @@ a:hover {
 /* Styles spécifiques pour la zone "Meilleur film" */
 #best-movie {
     padding-bottom: 0px;
-    display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
+    text-align: center;
+}
+
+#best-movie h1 {
+  text-align: center;
 }
 
 #best-rated {
@@ -423,10 +380,7 @@ a:hover {
        object-fit: cover;
 
 }
-#best-movie .movie-info h3 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
+
 
 
 /* Styles spécifiques pour la fenêtre modale */
